@@ -72,6 +72,10 @@ a:hover, a:focus {
   margin: 10;
 }
 
+.post-preview ul li {
+  list-style-image: url("../image/check-mark24.png");
+} 
+
 .navbarT {
   overflow: hidden;
   position: relative;
@@ -145,6 +149,7 @@ a:hover, a:focus {
 }
 .post-preview > a {
   color: #212529;
+  text-align: right;
 }
 .post-preview > a:focus, .post-preview > a:hover {
   text-decoration: none;

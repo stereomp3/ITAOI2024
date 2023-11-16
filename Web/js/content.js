@@ -71,54 +71,44 @@ const index_content = `<div class="container">
         </br></br></br></br>
         <div class="post-preview animated-wrapper">
             <h1 class="post-title animated-item" style="color: #f78550;">最新消息</h1>
-            <a>
-                <i class="fa fa-check-circle-o" aria-hidden="true"> </i>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="post-meta animated-item" href="#">Under Construction</a>
-            </a>
-            <p class="post-subtitle">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NOV 15, 2023
-            </p>
+            <ul>
+                <li style="font-size: 28px;">
+                    <a class="post-meta animated-item" href="#"> Under Construction</a>
+                </li>
+                <p class="post-subtitle">NOV 15, 2023</p>
+            </ul>
         </div>
         <div class="post-preview">
-            <a>
-                <i class="fa fa-check-circle-o" aria-hidden="true"> </i>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="post-meta" href="#">Under Construction</a>
-            </a>
-            <p class="post-subtitle">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NOV 14, 2023
-            </p>
+            <ul>
+                <li style="font-size: 28px;">
+                    <a class="post-meta animated-item" href="#"> Under Construction</a>
+                </li>
+                <p class="post-subtitle">NOV 15, 2023</p>
+            </ul>
         </div>
         <div class="post-preview">
-            <a>
-                <i class="fa fa-check-circle-o" aria-hidden="true"> </i>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="post-meta" href="#">Under Construction</a>
-            </a>
-            <p class="post-subtitle">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NOV 13, 2023
-            </p>
+            <ul>
+                <li style="font-size: 28px;">
+                    <a class="post-meta animated-item" href="#"> Under Construction</a>
+                </li>
+                <p class="post-subtitle">NOV 15, 2023</p>
+            </ul>
         </div>
         <div class="post-preview">
-            <a>
-                <i class="fa fa-check-circle-o" aria-hidden="true"> </i>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="post-meta" href="#">Under Construction</a>
-            </a>
-            <p class="post-subtitle">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NOV 12, 2023
-            </p>
+            <ul>
+                <li style="font-size: 28px;">
+                    <a class="post-meta animated-item" href="#"> Under Construction</a>
+                </li>
+                <p class="post-subtitle">NOV 15, 2023</p>
+            </ul>
         </div>
         <div class="post-preview">
-            <a>
-                <i class="fa fa-check-circle-o" aria-hidden="true"> </i>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="post-meta" href="#">Under Construction</a>
-            </a>
-            <p class="post-subtitle">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NOV 11, 2023
-            </p>
+            <ul>
+                <li style="font-size: 28px;">
+                    <a class="post-meta animated-item" href="#"> Under Construction</a>
+                </li>
+                <p class="post-subtitle">NOV 15, 2023</p>
+            </ul>
         </div>
         <!-- Divider-->
         <hr class="my-4" />
