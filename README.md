@@ -40,4 +40,8 @@
 
 openConf: https://www.openconf.com/download/
 
-github上沒有，好像是需要付費的
+github上沒有
+
+
+
+openConf 需要放在有 server 的網站上，官網有說明如何使用 https://www.openconf.com/documentation/install.php，看起來像是要使用 Linux 系統
