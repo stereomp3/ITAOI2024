@@ -12,7 +12,7 @@ R.layout = function (title, content) {  // tmp
 
 R.index = function () {
     R.layout("", "")
-    return R.main_layout(`<h4>ITAOI <br />2024</h4><p>離島資訊技術與應用研討會</p><a href="#" class="btn white_btn button_hover">報名系統</a>`, index_content)
+    return R.main_layout('<h1 style="font-weight:bold;">第二十二屆<br /></h1><h4>離島資訊技術與應用研討會</h4><p>The 22th Conference on Information Technology and Application in Outlying Islands</p><a href="#" class="btn white_btn button_hover">報名系統</a>', index_content)
 }
 R.Date = function () {
     R.layout("", "")
@@ -125,7 +125,7 @@ const Date_content = `<div class="container">
     </br></br></br>
         <h2 class="title title_color">重要日期</h2>
     </br></br>
-        <p>舉辦日期：</p>
+        <p>舉辦日期：2024年05月24~26日(五、六、日)</p>
     </br>
         <p>論文接受通知：</p>
     </br>
@@ -369,33 +369,37 @@ const Commit_Member_content = `<div class="container">
                     <article class="row blog_item">
                         <div class="col-md-9 animated-wrapper">
                             <div class="blog_post animated-item">
-                                <img src="image/tmp.png" alt="">
+                                <img src="https://president.nqu.edu.tw/var/file/11/1011/img/LINE_ALBUM_2023_3_14_230314.jpg"
+                                    alt="">
                                 <div class="blog_details">
                                     <a>
-                                        <h2>XXX 教授</h2>
+                                        <h2>陳建民 校長</h2>
                                     </a>
                                     <a>
-                                        <h2>大會統籌主席</h2>
+                                        <h2>大會榮譽主席</h2>
                                     </a>
-                                    <p>金門大學資訊工程學系系主任</p>
-                                    <a href="#" class="view_btn button_hover">View More</a>
+                                    <p>金門大學校長</p>
+                                    <a href="https://president.nqu.edu.tw/p/412-1011-254.php?Lang=zh-tw"
+                                        class="view_btn button_hover" target="_blank">View More</a>
                                 </div>
                             </div>
                         </div>
                     </article>
+                    <hr>
                     <article class="row blog_item">
                         <div class="col-md-9 animated-wrapper">
                             <div class="blog_post animated-item">
-                                <img src="image/tmp.png" alt="">
+                                <img src="https://csie.npu.edu.tw/df_ufiles/027/s_Web%20photo.jpg" alt="">
                                 <div class="blog_details">
                                     <a>
-                                        <h2>XXX 教授</h2>
+                                        <h2>胡武誌 教授</h2>
                                     </a>
                                     <a>
                                         <h2>大會統籌主席</h2>
                                     </a>
-                                    <p>金門大學資訊工程學系系主任</p>
-                                    <a href="#" class="view_btn button_hover">View More</a>
+                                    <p>國立澎湖科技大學資訊工程學系教授</p>
+                                    <a href="https://csie.npu.edu.tw/department/Details?Parser=41,4,27,,,,3"
+                                        class="view_btn button_hover" target="_blank">View More</a>
                                 </div>
                             </div>
                         </div>
@@ -418,16 +422,18 @@ const Commit_Member_content = `<div class="container">
                     <article class="row blog_item">
                         <div class="col-md-9 animated-wrapper">
                             <div class="blog_post animated-item">
-                                <img src="image/tmp.png" alt="">
+                                <img src="https://csie.nptu.edu.tw/var/file/110/1110/img/58/ljwang.jpg"
+                                    alt="">
                                 <div class="blog_details">
                                     <a>
-                                        <h2>XXX 教授</h2>
+                                        <h2>王隆仁 教授</h2>
                                     </a>
                                     <a>
-                                        <h2>大會統籌主席</h2>
+                                        <h2>議程委員</h2>
                                     </a>
-                                    <p>金門大學資訊工程學系系主任</p>
-                                    <a href="#" class="view_btn button_hover">View More</a>
+                                    <p>國立屏東大學資訊工程學系特聘教授</p>
+                                    <a href="https://csie.nptu.edu.tw/p/406-1110-10690,r202.php?Lang=zh-tw"
+                                        class="view_btn button_hover" target="_blank">View More</a>
                                 </div>
                             </div>
                         </div>
@@ -435,16 +441,400 @@ const Commit_Member_content = `<div class="container">
                     <article class="row blog_item">
                         <div class="col-md-9 animated-wrapper">
                             <div class="blog_post animated-item">
-                                <img src="image/tmp.png" alt="">
+                                <img src="https://csie.nfu.edu.tw/upload/member/20221117105745EqGk.jpg"
+                                    alt="">
                                 <div class="blog_details">
                                     <a>
-                                        <h2>XXX 教授</h2>
+                                        <h2>江季翰 教授</h2>
                                     </a>
                                     <a>
-                                        <h2>大會統籌主席</h2>
+                                        <h2>議程委員</h2>
                                     </a>
-                                    <p>金門大學資訊工程學系系主任</p>
-                                    <a href="#" class="view_btn button_hover">View More</a>
+                                    <p>虎尾科大資訊工程學系系主任</p>
+                                    <a href="https://csie.nfu.edu.tw/team/cID/2/ID/9"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="http://bigdata.nchu.edu.tw/upload/teacher/2102090108170000001.png"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>吳俊霖 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立中興大學資訊工程學系教授</p>
+                                    <a href="https://innovative.nchu.edu.tw/member_detail.php?Key=27"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="https://csie.npu.edu.tw/df_ufiles/027/s_%E6%9E%97%E6%98%B1%E9%81%94.jpg"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>林昱達 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立澎湖科技大學資訊工程學系助理教授</p>
+                                    <a href="https://csie.npu.edu.tw/department/Details?Parser=41,4,27,,,,5"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="https://www.csie.nuk.edu.tw/files/teacherProfile/tphong2019.jpg"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>洪宗貝 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立高雄大學資訊工程學系講座教授</p>
+                                    <a href="https://math.nuk.edu.tw/p/405-1018-4826,c95.php?Lang=zh-tw"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="https://vp-horng.nqu.edu.tw/var/file/14/1014/img/971178563.crdownload"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>洪集輝 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立金門大學電機工程學系特聘教授兼學術副校長</p>
+                                    <a href="https://ee.nqu.edu.tw/p/404-1036-1010.php?Lang=zh-tw"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="https://pairlabs.ai/wp-content/uploads/2020/06/photo-15.jpg"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>范國清 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立中央大學資訊工程學系教授</p>
+                                    <a href="https://pairlabs.ai/portfolio-item/professor-kuo-chin-fan-pi/"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="https://mipl.yuntech.edu.tw/wp-content/uploads/2021/12/%E5%BC%B5%E5%82%B3%E8%82%B2.jpg"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>張傳育 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立雲林科技大學資訊工程學系特聘教授</p>
+                                    <a href="https://mipl.yuntech.edu.tw/professor"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="https://csie.npu.edu.tw/df_ufiles/027/s_%E9%99%B3%E8%89%AF%E5%BC%BC.jpg"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>陳良弼 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立澎湖科技大學資訊工程學系助理教授</p>
+                                    <a href="https://csie.npu.edu.tw/department/Details?Parser=41,4,27,,,,4"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="https://www.csrsr.ncu.edu.tw/about/img/professor/yingnong.jpg"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>陳映濃 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立中央大學資訊工程學系助理教授</p>
+                                    <p>國立中央大學太空及遙測研究中心專案助理教授</p>
+                                    <a href="https://www.csrsr.ncu.edu.tw/about/professor_info.php?id=23"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="http://www.ec.nkust.edu.tw/wp-content/uploads/2013/09/%E9%99%B3%E6%98%AD%E5%92%8C.jpg"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>陳昭和 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立高雄科技大學資訊工程學系特聘教授兼系主任</p>
+                                    <p>國立高雄應用科技大學-計算機與網路中心主任</p>
+                                    <a href="http://www.ec.nkust.edu.tw/staff/%E9%99%B3%E6%98%AD%E5%92%8C/"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="http://ai.robo.ntu.edu.tw/images/member/c5caf5fe164688df22b145ada7b11933.jpg"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>傅楸善 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立台灣大學資訊工程學系教授</p>
+                                    <a href="https://www.csie.ntu.edu.tw/~fuh/"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="https://csie.nqu.edu.tw/var/file/38/1038/pictures/685/m/mczh-tw120x150_small2354_115218249374.jpg"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>馮玄明 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立金門大學資訊工程學系教授</p>
+                                    <p>國立金門大學理工學院院長</p>
+                                    <a href="https://csie.nqu.edu.tw/p/405-1038-2354,c469.php?Lang=zh-tw"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="https://csie.nptu.edu.tw/var/file/110/1110/img/291/part_11173_7833130_06949.jpg"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>黃鎮淇 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立屏東大學資訊工程學系副教授</p>
+                                    <a href="https://csie.nptu.edu.tw/p/406-1110-87523,r202.php?Lang=zh-tw"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="https://president.tut.edu.tw/var/file/5/1005/img/233776064.jpg"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>楊正宏 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立台南應用科技大學校長</p>
+                                    <a href="https://president.tut.edu.tw/p/16-1005-6235.php?Lang=zh-tw"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="https://cse.nsysu.edu.tw/var/file/205/1205/img/14.jpg" alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>楊昌彪 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立中山大學資訊工程學系特聘教授</p>
+                                    <a href="https://par.cse.nsysu.edu.tw/~cbyang/person/person_index.htm"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="https://csie.npu.edu.tw/df_ufiles/027/s_%E6%A5%8A%E6%98%8C%E7%9B%8A.jpg"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>楊昌益 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立澎湖科技大學資訊工程學系教授</p>
+                                    <a href="https://csie.npu.edu.tw/department/Details?Parser=41,4,27,,,,2"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="https://scholar.lib.ntnu.edu.tw/files-asset/49958126/chiahungyeh.jpg?w=160&f=webp"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>葉家宏 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立臺灣師範大學電機工程學系特聘教授</p>
+                                    <a href="https://scholar.lib.ntnu.edu.tw/zh/persons/chia-hung-yeh"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="https://sys.ndhu.edu.tw/RD/TeacherTreasury/GetTcherPic.ashx?tcher=10037&token=638359065831499245"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>趙涵捷 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立東華大學校長</p>
+                                    <a href="https://sys.ndhu.edu.tw/RD/TeacherTreasury/tlist.aspx?tcher=10037"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="https://csie.npu.edu.tw/df_ufiles/027/s_%E5%9C%8B%E7%8E%8B%E6%B9%96.jpg"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>蘇怡仁 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立澎湖科技大學資訊工程學系教授</p>
+                                    <a href="https://csie.npu.edu.tw/department/Details?Parser=41,4,27,,,,7"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="https://scholar.nycu.edu.tw/files-asset/40929627/Jun_Wei_Hsieh_270x270_c.jpg?w=160&f=webp"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>謝君偉 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立陽明交通大學智慧計算與科技研究所教授</p>
+                                    <a href="https://scholar.nycu.edu.tw/zh/persons/jun-wei-hsieh"
+                                        class="view_btn button_hover" target="_blank">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row blog_item">
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="blog_post animated-item">
+                                <img src="https://lh6.googleusercontent.com/CZL7mikZ9UvElIq1MW5LpfJNgDRwZRkAlSJocDqqltOfz8Tmja0Bi-3csUuPbGUJyPmqjSlzl6KKJC0Zvcc6lMspPKnU8RlMihj7ec3wLVQ8dwGW=w1280"
+                                    alt="">
+                                <div class="blog_details">
+                                    <a>
+                                        <h2>鄭志宏 教授</h2>
+                                    </a>
+                                    <a>
+                                        <h2>議程委員</h2>
+                                    </a>
+                                    <p>國立義守大學資訊工程學系教授</p>
+                                    <a href="https://sites.google.com/view/isuie01/%E5%B0%88%E4%BB%BB%E5%B8%AB%E8%B3%87-full-time-professors/%E9%84%AD%E5%BF%97%E5%AE%8F-%E6%95%99%E6%8E%88"
+                                        class="view_btn button_hover" target="_blank">View More</a>
                                 </div>
                             </div>
                         </div>
@@ -452,9 +842,8 @@ const Commit_Member_content = `<div class="container">
                 </div>
             </div>
         </div>
-
-        </br></br></br>
     </div>
 </div>
 
+</br></br></br>
 </div>`

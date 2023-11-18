@@ -50,8 +50,31 @@ window.onhashchange = async function () {
             R.index()
             break
     }
+    var animated_wrappers = document.querySelectorAll('.animated-wrapper');
+    for(var i = 0; i < animated_wrappers.length; i++){
+        observer.observe(animated_wrappers[i]);
+    }
 }
 window.onload = function () {
     // hash(#後面的)有任何改變就會觸發
     window.onhashchange()
 }
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const animated_item = entry.target.querySelector('.animated-item');
+
+      if (entry.isIntersecting) {
+        // square.classList.add(['animated', 'fadeInUp']);
+        // square.classList.add(['animated', 'fadeInUp']);
+        animated_item.classList.add('animated');
+        animated_item.classList.add('fadeInUp');
+        return; // if we added the class, exit the function
+      }
+  
+      // We're not intersecting, so remove the class!
+    //   animated_item.classList.remove('animated');
+    //   animated_item.classList.remove('fadeInUp');
+    });
+  });
+

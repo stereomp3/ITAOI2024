@@ -1266,6 +1266,9 @@ button:focus {
   color: #52c5fd;
 }
 
+.blog_post {
+  box-shadow: 10px 10px 5px rgb(175, 175, 175);
+}
 .blog_post img {
   max-width: 100%;
 }
