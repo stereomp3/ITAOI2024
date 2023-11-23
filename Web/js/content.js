@@ -72,10 +72,10 @@ const index_content = `<div class="container">
         <div class="post-preview animated-wrapper">
             <h1 class="post-title animated-item" style="color: #f78550;">最新消息</h1>
             <ul>
-                <li style="font-size: 28px;">
-                    <a class="post-meta animated-item" href="#"> Under Construction</a>
-                </li>
-                <p class="post-subtitle">NOV 15, 2023</p>
+            <li style="font-size: 28px;">
+            <a class="post-meta animated-item" href="#Date"> 重要日期已更新</a>
+        </li>
+        <p class="post-subtitle">NOV 23, 2023</p>
             </ul>
         </div>
         <div class="post-preview">
@@ -125,13 +125,16 @@ const Date_content = `<div class="container">
     </br></br></br>
         <h2 class="title title_color">重要日期</h2>
     </br></br>
-        <p>舉辦日期：2024年05月24~26日(五、六、日)</p>
+    <p>舉辦日期：2024年05月24~26日(五、六、日)</p>
     </br>
-        <p>論文接受通知：</p>
+        <p>論文接受通知：2024年4月12日</p>
     </br>
-        <p>論文定稿截止：</p>
+        <p>論文投稿截稿：2024年4月5日</p>
     </br>
-        <p>註冊(報名)截止：</p>
+        <p>論文定稿截止：2024年4月19日</p>
+    </br>
+        <p>註冊(報名)截止：2024年4月24日</p>
+        
     </br></br>
     </div>
 </div>
@@ -343,7 +346,7 @@ const introduction_content = `<div class="container">
                             <td>第二十二屆離島資訊技術與應用研討會</td>
                             <td>金門大學資工系</td>
                             <td>金門大學</td>
-                            <td>2024</td>
+                            <td>2024.5.24~26</td>
                         </tr>
                     </tbody>
                 </table>
