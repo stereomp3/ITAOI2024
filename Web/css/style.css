@@ -76,6 +76,19 @@ a:hover, a:focus {
   list-style-image: url("../image/check-mark24.png");
 } 
 
+.myiframe {
+  position: relative;
+  padding-bottom: 56%;
+  overflow: hidden;
+}
+.myiframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 .navbarT {
   overflow: hidden;
   position: relative;
@@ -218,7 +231,7 @@ button:focus {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    max-width: 1500px;
   }
 }
 

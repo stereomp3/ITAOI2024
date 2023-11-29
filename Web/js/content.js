@@ -52,7 +52,7 @@ R.signup = function () {
 }
 R.traffic_stay = function () {
     R.layout("", "")
-    return R.main_layout("<h4>交通、住宿資訊</h4>", `10`)
+    return R.main_layout("<h4>交通、住宿資訊</h4>", traffic_stay_content)
 }
 R.Sponsor = function () {
     R.layout("", "")
@@ -62,60 +62,63 @@ R.contact = function () {
     R.layout("", "")
     return R.main_layout("<h4>聯絡我們</h4>", `12`)
 }
+R.venue = function () {
+    R.layout("", "")
+    return R.main_layout("<h4>大會地點</h4>", venue_content)
+}
 
 
-const index_content = `<div class="container">
-<div class="row gx-4 gx-lg-5 justify-content-center">
-    <div class="col-md-10 col-lg-8 col-xl-7">
-        <!-- Post preview-->
-        </br></br></br></br>
-        <div class="post-preview animated-wrapper">
-            <h1 class="post-title animated-item" style="color: #f78550;">最新消息</h1>
-            <ul>
+const index_content = `<div class="row gx-4 gx-lg-5 justify-content-center">
+<div class="col-md-10 col-lg-8 col-xl-7">
+    <!-- Post preview-->
+    </br></br></br></br>
+    
+    <div class="post-preview animated-wrapper">
+        <h1 class="post-title animated-item" style="color: #f78550;">最新消息</h1>
+        <ul>
             <li style="font-size: 28px;">
-            <a class="post-meta animated-item" href="#Date"> 重要日期已更新</a>
-        </li>
-        <p class="post-subtitle">NOV 23, 2023</p>
-            </ul>
-        </div>
-        <div class="post-preview">
-            <ul>
-                <li style="font-size: 28px;">
-                    <a class="post-meta animated-item" href="#"> Under Construction</a>
-                </li>
-                <p class="post-subtitle">NOV 15, 2023</p>
-            </ul>
-        </div>
-        <div class="post-preview">
-            <ul>
-                <li style="font-size: 28px;">
-                    <a class="post-meta animated-item" href="#"> Under Construction</a>
-                </li>
-                <p class="post-subtitle">NOV 15, 2023</p>
-            </ul>
-        </div>
-        <div class="post-preview">
-            <ul>
-                <li style="font-size: 28px;">
-                    <a class="post-meta animated-item" href="#"> Under Construction</a>
-                </li>
-                <p class="post-subtitle">NOV 15, 2023</p>
-            </ul>
-        </div>
-        <div class="post-preview">
-            <ul>
-                <li style="font-size: 28px;">
-                    <a class="post-meta animated-item" href="#"> Under Construction</a>
-                </li>
-                <p class="post-subtitle">NOV 15, 2023</p>
-            </ul>
-        </div>
-        <!-- Divider-->
-        <hr class="my-4" />
-        <!-- Pager-->
-        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase"
-                href="#!">More News →</a></div>
+                <a class="post-meta animated-item" href="#traffic_stay"> 更改大會組織版面 </a>
+            </li>
+            <p class="post-subtitle">NOV 30, 2023</p>
+        </ul>
     </div>
+    <div class="post-preview">
+        <ul>
+            <li style="font-size: 28px;">
+                <a class="post-meta animated-item" href="#Commit_Member"> 住宿資訊已更新</a>
+            </li>
+            <p class="post-subtitle">NOV 29, 2023</p>
+        </ul>
+    </div>
+    <div class="post-preview">
+        <ul>
+            <li style="font-size: 28px;">
+                <a class="post-meta animated-item" href="#venue">大會地點已更新</a>
+            </li>
+            <p class="post-subtitle">NOV 29, 2023</p>
+        </ul>
+    </div>
+    <div class="post-preview">
+        <ul>
+            <li style="font-size: 28px;">
+                <a class="post-meta animated-item" href="#Date"> 重要日期已更新</a>
+            </li>
+            <p class="post-subtitle">NOV 23, 2023</p>
+        </ul>
+    </div>
+    <div class="post-preview">
+        <ul>
+            <li style="font-size: 28px;">
+                <a class="post-meta animated-item" href="#"> 網站架設 </a>
+            </li>
+            <p class="post-subtitle">NOV 15, 2023</p>
+        </ul>
+    </div>
+    <!-- Divider-->
+    <hr class="my-4" />
+    <!-- Pager-->
+    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase"
+            href="#!">More News →</a></div>
 </div>
 </div>`
 
@@ -849,4 +852,235 @@ const Commit_Member_content = `<div class="container">
 </div>
 
 </br></br></br>
+</div>`
+
+
+const traffic_stay_content = `<div class="row gx-4 gx-lg-5 justify-content-center animated-wrapper">
+<div class="col-md-10 col-lg-8 col-xl-7 contextP animated-item">
+    </br></br></br>
+    <div class="animated-wrapper">
+        <div class="animated-item">
+            <h2 class="title title_color" style="color: #f78550;">住宿資訊</h2>
+        </div>
+    </div>
+    </br></br>
+    <p>注意事項：</p>
+    <p>1. 住宿請與會人員自行訂房。</p>
+    <p>2. 訂房時，請留意飯店與本校的距離，建議訂金城鎮內的飯店及民宿。</p>
+
+    <div class="animated-wrapper">
+        <div class="w3-container animated-item">
+            <div style="text-align: center;">
+                <img width="100%" src="image/hotel/01KinmenYouthActivityCenter.jpg" alt="">
+            </div>
+            <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
+                <tbody>
+                    <tr>
+                        <td>飯店名稱</td>
+                        <td>金門青年活動中心</td>
+                    </tr>
+                    <tr>
+                        <td>網址</td>
+                        <td><a href="http://chinmen.cyh.org.tw/">http://chinmen.cyh.org.tw/</a></td>
+                    </tr>
+                    <tr>
+                        <td>電話</td>
+                        <td>082-325722</td>
+                    </tr>
+                    <tr>
+                        <td>地址</td>
+                        <td>金門縣金城鎮環島北路一段1號</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+    </div>
+    <div class="animated-wrapper">
+        <div class="w3-container animated-item">
+            <div style="text-align: center;">
+                <img width="100%" src="image/hotel/02NewJinruiHotel.jpg" alt="">
+            </div>
+            <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
+                <tbody>
+                    <tr>
+                        <td>飯店名稱</td>
+                        <td>新金瑞大飯店</td>
+                    </tr>
+                    <tr>
+                        <td>網址</td>
+                        <td><a href="https://www.quemoyhotel.com.tw/">https://www.quemoyhotel.com.tw/</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>電話</td>
+                        <td>082-323777</td>
+                    </tr>
+                    <tr>
+                        <td>地址</td>
+                        <td>金門縣金城鎮民權路166號</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+    </div>
+    <div class="animated-wrapper">
+        <div class="w3-container animated-item">
+            <div style="text-align: center;">
+                <img width="100%" src="image/hotel/03In99BoutiqueHotel.jpg" alt="">
+            </div>
+            <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
+                <tbody>
+                    <tr>
+                        <td>飯店名稱</td>
+                        <td>In99精品旅館</td>
+                    </tr>
+                    <tr>
+                        <td>網址</td>
+                        <td><a href="https://www.in99hotel.com/">https://www.in99hotel.com/</a></td>
+                    </tr>
+                    <tr>
+                        <td>電話</td>
+                        <td>082-324851</td>
+                    </tr>
+                    <tr>
+                        <td>地址</td>
+                        <td>金門縣金城鎮民生路16號</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+    </div>
+    <div class="animated-wrapper">
+        <div class="w3-container animated-item">
+            <div style="text-align: center;">
+                <img width="100%" src="image/hotel/04HaifuBusinessHotel.jpg" alt="">
+            </div>
+            <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
+                <tbody>
+                    <tr>
+                        <td>飯店名稱</td>
+                        <td>海福商務飯店</td>
+                    </tr>
+                    <tr>
+                        <td>網址</td>
+                        <td><a href="https://reurl.cc/OjyWX9">https://reurl.cc/OjyWX9</a></td>
+                    </tr>
+                    <tr>
+                        <td>電話</td>
+                        <td>082-322538</td>
+                    </tr>
+                    <tr>
+                        <td>地址</td>
+                        <td>金門縣金城鎮民權路85號</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+    </div>
+    <div class="animated-wrapper">
+        <div class="w3-container animated-item">
+            <div style="text-align: center;">
+                <img width="100%" src="image/hotel/05HongfuHotel.jpg" alt="">
+            </div>
+            <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
+                <tbody>
+                    <tr>
+                        <td>飯店名稱</td>
+                        <td>宏福大飯店</td>
+                    </tr>
+                    <tr>
+                        <td>網址</td>
+                        <td><a href="https://www.hongfu-hotel.com/">https://www.hongfu-hotel.com/</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>電話</td>
+                        <td>082-326768</td>
+                    </tr>
+                    <tr>
+                        <td>地址</td>
+                        <td>金門縣金城鎮民族路171號</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+    </div>
+    <div class="animated-wrapper">
+        <div class="w3-container animated-item">
+            <div style="text-align: center;">
+                <img width="100%" src="image/hotel/06WujiangHotel.jpg" alt="">
+            </div>
+            <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
+                <tbody>
+                    <tr>
+                        <td>飯店名稱</td>
+                        <td>浯江大飯店</td>
+                    </tr>
+                    <tr>
+                        <td>網址</td>
+                        <td><a href="http://www.riverkinmen.com/">http://www.riverkinmen.com/</a></td>
+                    </tr>
+                    <tr>
+                        <td>電話</td>
+                        <td>082-322211</td>
+                    </tr>
+                    <tr>
+                        <td>地址</td>
+                        <td>金門縣金城鎮西海路三段100號</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+    </div>
+    <div class="animated-wrapper">
+        <div class="w3-container animated-item">
+            <div style="text-align: center;">
+                <img width="100%" src="image/hotel/07YunfengBoutiqueCulturalTourism.jpg" alt="">
+            </div>
+            <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
+                <tbody>
+                    <tr>
+                        <td>飯店名稱</td>
+                        <td>雲峰精品文旅</td>
+                    </tr>
+                    <tr>
+                        <td>網址</td>
+                        <td><a href="https://cphotel.ezhotel.com.tw/">https://cphotel.ezhotel.com.tw/</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>電話</td>
+                        <td>082-326688</td>
+                    </tr>
+                    <tr>
+                        <td>地址</td>
+                        <td>金門縣金寧鄉大學路32巷48號</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+    </div>
+    </br>
+    <p>更多資訊：<a href="https://kinmen.travel/zh-tw/accommodation">金門縣觀光旅遊網</a></p>
+    </br>
+</div>
+</div>`
+
+const venue_content = `<div class="row gx-4 gx-lg-5 justify-content-center animated-wrapper">
+<div class="col-md-10 col-lg-8 col-xl-7 contextP animated-item">
+    </br></br></br>
+    <h2 class="title title_color">國立金門大學</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12216.033944125564!2d118.32347578172869!3d24.456036821880616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3414a25f9967e56f%3A0xf1c093a50b7e8ba6!2z5ZyL56uL6YeR6ZaA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1613569146721!5m2!1szh-TW!2stw"
+        width="100%" height="450px" marginwidth="0" frameborder="0" style="border:0;" allowfullscreen=""
+        aria-hidden="false" tabindex="0"></iframe>
+    </br></br></br>
+</div>
 </div>`
