@@ -43,6 +43,9 @@ window.onhashchange = async function () {
         case '#contact':
             R.contact()
             break
+        case '#venue':
+            R.venue()
+            break
         case '#Under_Construction':
             R.Under_Construction()
             break
