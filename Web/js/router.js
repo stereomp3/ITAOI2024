@@ -55,7 +55,7 @@ window.onhashchange = async function () {
     }
     var animated_wrappers = document.querySelectorAll('.animated-wrapper');
     for(var i = 0; i < animated_wrappers.length; i++){
-        observer.observe(animated_wrappers[i]);
+        my_observer.observe(animated_wrappers[i]);
     }
 }
 window.onload = function () {
@@ -63,7 +63,7 @@ window.onload = function () {
     window.onhashchange()
 }
 
-const observer = new IntersectionObserver(entries => {
+const my_observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       const animated_item = entry.target.querySelector('.animated-item');
 

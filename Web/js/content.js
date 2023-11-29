@@ -77,7 +77,7 @@ const index_content = `<div class="row gx-4 gx-lg-5 justify-content-center">
         <h1 class="post-title animated-item" style="color: #f78550;">最新消息</h1>
         <ul>
             <li style="font-size: 28px;">
-                <a class="post-meta animated-item" href="#traffic_stay"> 更改大會組織版面 </a>
+                <a class="post-meta animated-item" href="#Commit_Member"> 更改大會組織版面 </a>
             </li>
             <p class="post-subtitle">NOV 30, 2023</p>
         </ul>
@@ -85,7 +85,7 @@ const index_content = `<div class="row gx-4 gx-lg-5 justify-content-center">
     <div class="post-preview">
         <ul>
             <li style="font-size: 28px;">
-                <a class="post-meta animated-item" href="#Commit_Member"> 住宿資訊已更新</a>
+                <a class="post-meta animated-item" href="#traffic_stay"> 住宿資訊已更新</a>
             </li>
             <p class="post-subtitle">NOV 29, 2023</p>
         </ul>
