@@ -8,7 +8,7 @@ R.layout = function (title, content) {  // tmp
     // document.querySelector('main').innerHTML = ``
     document.getElementById('ITAOI_Title').innerHTML = title
     document.getElementById('ITAOI_Content').innerHTML = content
-}  
+}
 
 R.index = function () {
     R.layout("", "")
@@ -32,7 +32,7 @@ R.Program = function () {
 }
 R.Special_section = function () {
     R.layout("", "")
-    return R.main_layout("<h4>特別議程</h4>", `5`)
+    return R.main_layout("<h4>特別議程</h4>", Special_section_content)
 }
 R.Under_Construction = function () {
     R.layout("", "")
@@ -60,17 +60,38 @@ R.Sponsor = function () {
 }
 R.contact = function () {
     R.layout("", "")
-    return R.main_layout("<h4>聯絡我們</h4>", `12`)
+    return R.main_layout("<h4>聯絡我們</h4>", contact_content)
 }
 R.venue = function () {
     R.layout("", "")
     return R.main_layout("<h4>大會地點</h4>", venue_content)
 }
 
+function more_news() {
+    // Create an "li" node:
+    const node = document.createElement("div");
+    node.innerHTML = more_news_content
+    new_area = document.getElementById("NewsArea")
+    news_button = document.getElementById("more_news")
+    news_button.style.display = "none"
+    // Append the "li" node to the list:
+    new_area.appendChild(node);
+}
+
+const more_news_content = `<div class="post-preview">
+<ul>
+    <li style="font-size: 28px;">
+        <a class="post-meta animated-item" href="#"> 網站架設 </a>
+    </li>
+    <p class="post-subtitle">NOV 15, 2023</p>
+</ul>
+</div>
+</br>
+`
 
 const index_content = `<div class="container">
 <div class="row gx-4 gx-lg-5 justify-content-center">
-    <div class="col-md-10 col-lg-8 col-xl-7">
+    <div class="col-md-10 col-lg-8 col-xl-7" id="NewsArea">
         <!-- Post preview-->
         </br></br></br></br>
         
@@ -78,9 +99,17 @@ const index_content = `<div class="container">
             <h1 class="post-title animated-item" style="color: #f78550;">最新消息</h1>
             <ul>
                 <li style="font-size: 28px;">
-                    <a class="post-meta animated-item" href="#Commit_Member"> 更改大會組織版面 </a>
+                    <a class="post-meta animated-item" href="#traffic_stay"> 交通資訊已更新 </a>
                 </li>
-                <p class="post-subtitle">NOV 30, 2023</p>
+                <p class="post-subtitle">DEC 01, 2023</p>
+            </ul>
+        </div>
+        <div class="post-preview">
+            <ul>
+                <li style="font-size: 28px;">
+                    <a class="post-meta animated-item" href="#Special_section"> 特別議程已更新 </a>
+                </li>
+                <p class="post-subtitle">DEC 01, 2023</p>
             </ul>
         </div>
         <div class="post-preview">
@@ -107,19 +136,13 @@ const index_content = `<div class="container">
                 <p class="post-subtitle">NOV 23, 2023</p>
             </ul>
         </div>
-        <div class="post-preview">
-            <ul>
-                <li style="font-size: 28px;">
-                    <a class="post-meta animated-item" href="#"> 網站架設 </a>
-                </li>
-                <p class="post-subtitle">NOV 15, 2023</p>
-            </ul>
+        <div id="more_news">
+            <!-- Divider-->
+            <hr class="my-4" />
+            <!-- Pager-->
+            <div class="d-flex justify-content-end mb-4" onclick="more_news()"><a
+                    class="btn btn-primary text-uppercase" style="color: white;">More News →</a></div>
         </div>
-        <!-- Divider-->
-        <hr class="my-4" />
-        <!-- Pager-->
-        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase"
-                href="#!">More News →</a></div>
     </div>
 </div>
 </div>`
@@ -128,13 +151,13 @@ const Date_content = `<div class="container">
 <div class="row gx-4 gx-lg-5 justify-content-center animated-wrapper">
     <div class="col-md-10 col-lg-8 col-xl-7 contextP animated-item" >
     </br></br></br>
-        <h2 class="title title_color">重要日期</h2>
+        <h2 class="title title_color" style="color: #f78550;">重要日期</h2>
     </br></br>
     <p>舉辦日期：2024年05月24~26日(五、六、日)</p>
     </br>
-        <p>論文接受通知：2024年4月12日</p>
-    </br>
         <p>論文投稿截稿：2024年4月5日</p>
+    </br>
+        <p>論文接受通知：2024年4月12日</p>
     </br>
         <p>論文定稿截止：2024年4月19日</p>
     </br>
@@ -362,733 +385,803 @@ const introduction_content = `<div class="container">
 </div>
 </div>`
 const Commit_Member_content = `<div class="container">
-</br></br></br>
-<div class="animated-wrapper row justify-content-center">
-    <div class="animated-item">
-        <h2 class="title title_color" style="color: #f78550;">大會組織</h2>
+<div class="row gx-4 gx-lg-5 justify-content-center">
+    <div class="col-xl-9 contextP">
+        </br></br></br>
+        <div class="animated-wrapper row justify-content-center">
+            <div class="animated-item">
+                <h2 class="title title_color" style="color: #f78550;">大會組織</h2>
+            </div>
+        </div>
+        <div class="row gallery-item justify-content-center">
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image"
+                        style="background: url(image/Commit_Members/001.jpg);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>陳建民 校長</h2>
+                        </a>
+                        <a>
+                            <h2>大會榮譽主席</h2>
+                        </a>
+                        <p>金門大學校長</p>
+                        <a href="https://president.nqu.edu.tw/p/412-1011-254.php?Lang=zh-tw"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image"
+                        style="background: url(image/Commit_Members/002.jpg);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>胡武誌 教授</h2>
+                        </a>
+                        <a>
+                            <h2>大會統籌主席</h2>
+                        </a>
+                        <p>國立澎湖科技大學資訊工程學系教授</p>
+                        <a href="https://csie.npu.edu.tw/department/Details?Parser=41,4,27,,,,3"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </br></br></br>
+        <div class="animated-wrapper row justify-content-center">
+            <div class="animated-item">
+                <h2 class="title title_color" style="color: #f78550;">議程委員</h2>
+            </div>
+        </div>
+        <div class="row gallery-item justify-content-center">
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image"
+                        style="background: url(image/Commit_Members/003.png);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>王隆仁 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立屏東大學資訊工程學系特聘教授</p>
+                        <a href="https://csie.nptu.edu.tw/p/406-1110-10690,r202.php?Lang=zh-tw"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/04.jpg);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>江季翰 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>虎尾科大資訊工程學系系主任</p>
+                        <a href="https://csie.nfu.edu.tw/team/cID/2/ID/9" class="view_btn button_hover"
+                            target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/05.png);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>吳俊霖 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立中興大學資訊工程學系教授</p>
+                        <a href="https://innovative.nchu.edu.tw/member_detail.php?Key=27"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/06.jpg);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>林昱達 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立澎湖科技大學資訊工程學系助理教授</p>
+                        <a href="https://csie.npu.edu.tw/department/Details?Parser=41,4,27,,,,5"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/07.jpg);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>洪宗貝 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立高雄大學資訊工程學系講座教授</p>
+                        <a href="https://math.nuk.edu.tw/p/405-1018-4826,c95.php?Lang=zh-tw"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/08.png);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>洪集輝 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立金門大學電機工程學系特聘教授兼學術副校長</p>
+                        <a href="https://ee.nqu.edu.tw/p/404-1036-1010.php?Lang=zh-tw"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/09.jpg);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>范國清 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立中央大學資訊工程學系教授</p>
+                        <a href="https://pairlabs.ai/portfolio-item/professor-kuo-chin-fan-pi/"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/10.jpg);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>張傳育 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立雲林科技大學資訊工程學系特聘教授</p>
+                        <a href="https://mipl.yuntech.edu.tw/professor" class="view_btn button_hover"
+                            target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/11.jpg);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>陳良弼 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立澎湖科技大學資訊工程學系助理教授</p>
+                        <a href="https://csie.npu.edu.tw/department/Details?Parser=41,4,27,,,,4"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/12.jpg);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>陳映濃 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立中央大學資訊工程學系助理教授</p>
+                        <p>國立中央大學太空及遙測研究中心專案助理教授</p>
+                        <a href="https://www.csrsr.ncu.edu.tw/about/professor_info.php?id=23"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/13.jpg);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>陳昭和 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立高雄科技大學資訊工程學系特聘教授兼系主任</p>
+                        <p>國立高雄應用科技大學-計算機與網路中心主任</p>
+                        <a href="http://www.ec.nkust.edu.tw/staff/%E9%99%B3%E6%98%AD%E5%92%8C/"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/14.jpg);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>傅楸善 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立台灣大學資訊工程學系教授</p>
+                        <a href="https://www.csie.ntu.edu.tw/~fuh/" class="view_btn button_hover"
+                            target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image"
+                        style="background: url(image/Commit_Members/15.jfif);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>馮玄明 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立金門大學資訊工程學系教授</p>
+                        <p>國立金門大學理工學院院長</p>
+                        <a href="https://csie.nqu.edu.tw/p/405-1038-2354,c469.php?Lang=zh-tw"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image"
+                        style="background: url(image/Commit_Members/16.jfif);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>黃鎮淇 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立屏東大學資訊工程學系副教授</p>
+                        <a href="https://csie.nptu.edu.tw/p/406-1110-87523,r202.php?Lang=zh-tw"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/17.jpg);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>楊正宏 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立台南應用科技大學校長</p>
+                        <a href="https://president.tut.edu.tw/p/16-1005-6235.php?Lang=zh-tw"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/18.jpg);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>楊昌彪 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立中山大學資訊工程學系特聘教授</p>
+                        <a href="https://par.cse.nsysu.edu.tw/~cbyang/person/person_index.htm"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/19.jpg);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>楊昌益 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立澎湖科技大學資訊工程學系教授</p>
+                        <a href="https://csie.npu.edu.tw/department/Details?Parser=41,4,27,,,,2"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/20.png);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>葉家宏 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立臺灣師範大學電機工程學系特聘教授</p>
+                        <a href="https://scholar.lib.ntnu.edu.tw/zh/persons/chia-hung-yeh"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            </br></br></br>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image"
+                        style="background: url(image/Commit_Members/21.jfif);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>趙涵捷 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立東華大學校長</p>
+                        <a href="https://sys.ndhu.edu.tw/RD/TeacherTreasury/tlist.aspx?tcher=10037"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/22.jpg);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>蘇怡仁 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立澎湖科技大學資訊工程學系教授</p>
+                        <a href="https://csie.npu.edu.tw/department/Details?Parser=41,4,27,,,,7"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/23.png);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>謝君偉 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立陽明交通大學智慧計算與科技研究所教授</p>
+                        <a href="https://scholar.nycu.edu.tw/zh/persons/jun-wei-hsieh"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/24.jpg);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>鄭志宏 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立義守大學資訊工程學系教授</p>
+                        <a href="https://sites.google.com/view/isuie01/%E5%B0%88%E4%BB%BB%E5%B8%AB%E8%B3%87-full-time-professors/%E9%84%AD%E5%BF%97%E5%AE%8F-%E6%95%99%E6%8E%88"
+                            class="view_btn button_hover" target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 blog_post animated-wrapper">
+                <div class="animated-item">
+                    <div class="single-gallery-image" style="background: url(image/Commit_Members/25.jpg);">
+                    </div>
+
+                    <div class="blog_details">
+                        <a>
+                            <h2>吳信德 教授</h2>
+                        </a>
+                        <a>
+                            <h2>議程委員</h2>
+                        </a>
+                        <p>國立台東大學資訊工程學系副教授</p>
+                        <a href="https://sites.google.com/view/hsin-te/home" class="view_btn button_hover"
+                            target="_blank">View More</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        </br></br></br>
     </div>
 </div>
-<div class="row gallery-item">
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/001.jpg);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>陳建民 校長</h2>
-                </a>
-                <a>
-                    <h2>大會榮譽主席</h2>
-                </a>
-                <p>金門大學校長</p>
-                <a href="https://president.nqu.edu.tw/p/412-1011-254.php?Lang=zh-tw"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/002.jpg);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>胡武誌 教授</h2>
-                </a>
-                <a>
-                    <h2>大會統籌主席</h2>
-                </a>
-                <p>國立澎湖科技大學資訊工程學系教授</p>
-                <a href="https://csie.npu.edu.tw/department/Details?Parser=41,4,27,,,,3"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
 </div>
-</br></br></br>
-<div class="animated-wrapper row justify-content-center">
-    <div class="animated-item">
-        <h2 class="title title_color" style="color: #f78550;">議程委員</h2>
-    </div>
-</div>
-<div class="row gallery-item">
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/003.png);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>王隆仁 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立屏東大學資訊工程學系特聘教授</p>
-                <a href="https://csie.nptu.edu.tw/p/406-1110-10690,r202.php?Lang=zh-tw"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/04.jpg);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>江季翰 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>虎尾科大資訊工程學系系主任</p>
-                <a href="https://csie.nfu.edu.tw/team/cID/2/ID/9" class="view_btn button_hover"
-                    target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/05.png);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>吳俊霖 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立中興大學資訊工程學系教授</p>
-                <a href="https://innovative.nchu.edu.tw/member_detail.php?Key=27"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-
-    </br></br></br>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/06.jpg);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>林昱達 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立澎湖科技大學資訊工程學系助理教授</p>
-                <a href="https://csie.npu.edu.tw/department/Details?Parser=41,4,27,,,,5"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/07.jpg);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>洪宗貝 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立高雄大學資訊工程學系講座教授</p>
-                <a href="https://math.nuk.edu.tw/p/405-1018-4826,c95.php?Lang=zh-tw"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/08.png);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>洪集輝 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立金門大學電機工程學系特聘教授兼學術副校長</p>
-                <a href="https://ee.nqu.edu.tw/p/404-1036-1010.php?Lang=zh-tw" class="view_btn button_hover"
-                    target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    </br></br></br>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/09.jpg);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>范國清 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立中央大學資訊工程學系教授</p>
-                <a href="https://pairlabs.ai/portfolio-item/professor-kuo-chin-fan-pi/"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/10.jpg);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>張傳育 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立雲林科技大學資訊工程學系特聘教授</p>
-                <a href="https://mipl.yuntech.edu.tw/professor" class="view_btn button_hover"
-                    target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/11.jpg);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>陳良弼 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立澎湖科技大學資訊工程學系助理教授</p>
-                <a href="https://csie.npu.edu.tw/department/Details?Parser=41,4,27,,,,4"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    </br></br></br>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/12.jpg);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>陳映濃 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立中央大學資訊工程學系助理教授</p>
-                <p>國立中央大學太空及遙測研究中心專案助理教授</p>
-                <a href="https://www.csrsr.ncu.edu.tw/about/professor_info.php?id=23"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/13.jpg);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>陳昭和 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立高雄科技大學資訊工程學系特聘教授兼系主任</p>
-                <p>國立高雄應用科技大學-計算機與網路中心主任</p>
-                <a href="http://www.ec.nkust.edu.tw/staff/%E9%99%B3%E6%98%AD%E5%92%8C/"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/14.jpg);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>傅楸善 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立台灣大學資訊工程學系教授</p>
-                <a href="https://www.csie.ntu.edu.tw/~fuh/" class="view_btn button_hover"
-                    target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    </br></br></br>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/15.jfif);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>馮玄明 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立金門大學資訊工程學系教授</p>
-                <p>國立金門大學理工學院院長</p>
-                <a href="https://csie.nqu.edu.tw/p/405-1038-2354,c469.php?Lang=zh-tw"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/16.jfif);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>黃鎮淇 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立屏東大學資訊工程學系副教授</p>
-                <a href="https://csie.nptu.edu.tw/p/406-1110-87523,r202.php?Lang=zh-tw"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/17.jpg);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>楊正宏 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立台南應用科技大學校長</p>
-                <a href="https://president.tut.edu.tw/p/16-1005-6235.php?Lang=zh-tw"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    </br></br></br>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/18.jpg);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>楊昌彪 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立中山大學資訊工程學系特聘教授</p>
-                <a href="https://par.cse.nsysu.edu.tw/~cbyang/person/person_index.htm"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/19.jpg);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>楊昌益 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立澎湖科技大學資訊工程學系教授</p>
-                <a href="https://csie.npu.edu.tw/department/Details?Parser=41,4,27,,,,2"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/20.png);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>葉家宏 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立臺灣師範大學電機工程學系特聘教授</p>
-                <a href="https://scholar.lib.ntnu.edu.tw/zh/persons/chia-hung-yeh"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    </br></br></br>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/21.jfif);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>趙涵捷 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立東華大學校長</p>
-                <a href="https://sys.ndhu.edu.tw/RD/TeacherTreasury/tlist.aspx?tcher=10037"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/22.jpg);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>蘇怡仁 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立澎湖科技大學資訊工程學系教授</p>
-                <a href="https://csie.npu.edu.tw/department/Details?Parser=41,4,27,,,,7"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/23.png);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>謝君偉 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立陽明交通大學智慧計算與科技研究所教授</p>
-                <a href="https://scholar.nycu.edu.tw/zh/persons/jun-wei-hsieh" class="view_btn button_hover"
-                    target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
-    </br></br></br>
-    <div class="col-md-4 blog_post animated-wrapper">
-        <div class="animated-item">
-            <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/24.jpg);">
-            </div>
-
-            <div class="blog_details">
-                <a>
-                    <h2>鄭志宏 教授</h2>
-                </a>
-                <a>
-                    <h2>議程委員</h2>
-                </a>
-                <p>國立義守大學資訊工程學系教授</p>
-                <a href="https://sites.google.com/view/isuie01/%E5%B0%88%E4%BB%BB%E5%B8%AB%E8%B3%87-full-time-professors/%E9%84%AD%E5%BF%97%E5%AE%8F-%E6%95%99%E6%8E%88"
-                    class="view_btn button_hover" target="_blank">View More</a>
-            </div>
-
-        </div>
-    </div>
 </div>
 
+</div>
 </br></br></br>
 </div>`
 
 
-const traffic_stay_content = `<div class="row gx-4 gx-lg-5 justify-content-center animated-wrapper">
-<div class="col-md-10 col-lg-8 col-xl-7 contextP animated-item">
-    </br></br></br>
-    <div class="animated-wrapper">
-        <div class="animated-item">
-            <h2 class="title title_color" style="color: #f78550;">住宿資訊</h2>
+const traffic_stay_content = `<div class="container">
+<div class="row gx-4 gx-lg-5 justify-content-center animated-wrapper">
+    <div class="col-md-10 col-lg-8 col-xl-7 contextP animated-item">
+        </br></br></br>
+        <div class="animated-wrapper">
+            <div class="animated-item">
+                <h2 class="title title_color" style="color: #f78550;">交通資訊</h2>
+            </div>
         </div>
-    </div>
-    </br></br>
-    <p>注意事項：</p>
-    <p>1. 住宿請與會人員自行訂房。</p>
-    <p>2. 訂房時，請留意飯店與本校的距離，建議訂金城鎮內的飯店及民宿。</p>
+        </br></br>
+        <p>※如何前往金門</p>
+        <div style="text-align: center;">
+            <img width="100%" src="image/traffic/WTC.png" alt="">
+        </div>
+        </br>
+        <p>相關的交通資訊可參考 <a href="https://kinmen.travel/zh-tw/information/kinmen">: 金門縣觀光旅遊網 </a></p>
 
-    <div class="animated-wrapper">
-        <div class="w3-container animated-item">
-            <div style="text-align: center;">
-                <img width="100%" src="image/hotel/01KinmenYouthActivityCenter.jpg" alt="">
+        </br></br>
+        <p>※如何前往金大</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12216.033944125564!2d118.32347578172869!3d24.456036821880616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3414a25f9967e56f%3A0xf1c093a50b7e8ba6!2z5ZyL56uL6YeR6ZaA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1613569146721!5m2!1szh-TW!2stw"
+            width="100%" height="450px" marginwidth="0" frameborder="0" style="border:0;" allowfullscreen=""
+            aria-hidden="false" tabindex="0"></iframe>
+        </br></br> </br></br>
+        <p>※航空公司資訊</p>
+        <div>
+            <div class="animated-wrapper">
+                <div class="w3-container animated-item">
+                    <div style="text-align: center;">
+                        <img width="50%" src="image/traffic/MandarinAirlines.png" alt="">
+                    </div>
+                    <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
+                        <tbody>
+                            <tr>
+                                <td>訂位專線</td>
+                                <td>886-412-8008</td>
+                            </tr>
+                            <tr>
+                                <td>訂位服務</td>
+                                <td><a href="https://www.mandarin-airlines.com/index2015/index.html">前往訂位</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
             </div>
-            <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
-                <tbody>
-                    <tr>
-                        <td>飯店名稱</td>
-                        <td>金門青年活動中心</td>
-                    </tr>
-                    <tr>
-                        <td>網址</td>
-                        <td><a href="http://chinmen.cyh.org.tw/">http://chinmen.cyh.org.tw/</a></td>
-                    </tr>
-                    <tr>
-                        <td>電話</td>
-                        <td>082-325722</td>
-                    </tr>
-                    <tr>
-                        <td>地址</td>
-                        <td>金門縣金城鎮環島北路一段1號</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-        </div>
-    </div>
-    <div class="animated-wrapper">
-        <div class="w3-container animated-item">
-            <div style="text-align: center;">
-                <img width="100%" src="image/hotel/02NewJinruiHotel.jpg" alt="">
+            <div class="animated-wrapper">
+                <div class="w3-container animated-item">
+                    <div style="text-align: center;">
+                        <img width="50%" src="image/traffic/UNIAIR.jpg" alt="">
+                    </div>
+                    <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
+                        <tbody>
+                            <tr>
+                                <td>訂位專線</td>
+                                <td>886-2-2508-6999</td>
+                            </tr>
+                            <tr>
+                                <td>訂位服務</td>
+                                <td><a href="https://www.uniair.com.tw/rwd/index.aspx">前往訂位</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
             </div>
-            <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
-                <tbody>
-                    <tr>
-                        <td>飯店名稱</td>
-                        <td>新金瑞大飯店</td>
-                    </tr>
-                    <tr>
-                        <td>網址</td>
-                        <td><a href="https://www.quemoyhotel.com.tw/">https://www.quemoyhotel.com.tw/</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>電話</td>
-                        <td>082-323777</td>
-                    </tr>
-                    <tr>
-                        <td>地址</td>
-                        <td>金門縣金城鎮民權路166號</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
         </div>
-    </div>
-    <div class="animated-wrapper">
-        <div class="w3-container animated-item">
-            <div style="text-align: center;">
-                <img width="100%" src="image/hotel/03In99BoutiqueHotel.jpg" alt="">
+        
+        </br></br></br>
+        <div class="animated-wrapper">
+            <div class="animated-item">
+                <h2 class="title title_color" style="color: #f78550;">住宿資訊</h2>
             </div>
-            <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
-                <tbody>
-                    <tr>
-                        <td>飯店名稱</td>
-                        <td>In99精品旅館</td>
-                    </tr>
-                    <tr>
-                        <td>網址</td>
-                        <td><a href="https://www.in99hotel.com/">https://www.in99hotel.com/</a></td>
-                    </tr>
-                    <tr>
-                        <td>電話</td>
-                        <td>082-324851</td>
-                    </tr>
-                    <tr>
-                        <td>地址</td>
-                        <td>金門縣金城鎮民生路16號</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
         </div>
-    </div>
-    <div class="animated-wrapper">
-        <div class="w3-container animated-item">
-            <div style="text-align: center;">
-                <img width="100%" src="image/hotel/04HaifuBusinessHotel.jpg" alt="">
+        </br></br>
+        <p>注意事項：</p>
+        <p>1. 住宿請與會人員自行訂房。</p>
+        <p>2. 訂房時，請留意飯店與本校的距離，建議訂金城鎮內的飯店及民宿。</p>
+
+        <div class="animated-wrapper">
+            <div class="w3-container animated-item">
+                <div style="text-align: center;">
+                    <img width="100%" src="image/hotel/01KinmenYouthActivityCenter.jpg" alt="">
+                </div>
+                <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
+                    <tbody>
+                        <tr>
+                            <td>飯店名稱</td>
+                            <td>金門青年活動中心</td>
+                        </tr>
+                        <tr>
+                            <td>網址</td>
+                            <td><a href="http://chinmen.cyh.org.tw/">http://chinmen.cyh.org.tw/</a></td>
+                        </tr>
+                        <tr>
+                            <td>電話</td>
+                            <td>082-325722</td>
+                        </tr>
+                        <tr>
+                            <td>地址</td>
+                            <td>金門縣金城鎮環島北路一段1號</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
             </div>
-            <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
-                <tbody>
-                    <tr>
-                        <td>飯店名稱</td>
-                        <td>海福商務飯店</td>
-                    </tr>
-                    <tr>
-                        <td>網址</td>
-                        <td><a href="https://reurl.cc/OjyWX9">https://reurl.cc/OjyWX9</a></td>
-                    </tr>
-                    <tr>
-                        <td>電話</td>
-                        <td>082-322538</td>
-                    </tr>
-                    <tr>
-                        <td>地址</td>
-                        <td>金門縣金城鎮民權路85號</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
         </div>
-    </div>
-    <div class="animated-wrapper">
-        <div class="w3-container animated-item">
-            <div style="text-align: center;">
-                <img width="100%" src="image/hotel/05HongfuHotel.jpg" alt="">
+        <div class="animated-wrapper">
+            <div class="w3-container animated-item">
+                <div style="text-align: center;">
+                    <img width="100%" src="image/hotel/02NewJinruiHotel.jpg" alt="">
+                </div>
+                <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
+                    <tbody>
+                        <tr>
+                            <td>飯店名稱</td>
+                            <td>新金瑞大飯店</td>
+                        </tr>
+                        <tr>
+                            <td>網址</td>
+                            <td><a href="https://www.quemoyhotel.com.tw/">https://www.quemoyhotel.com.tw/</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>電話</td>
+                            <td>082-323777</td>
+                        </tr>
+                        <tr>
+                            <td>地址</td>
+                            <td>金門縣金城鎮民權路166號</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
             </div>
-            <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
-                <tbody>
-                    <tr>
-                        <td>飯店名稱</td>
-                        <td>宏福大飯店</td>
-                    </tr>
-                    <tr>
-                        <td>網址</td>
-                        <td><a href="https://www.hongfu-hotel.com/">https://www.hongfu-hotel.com/</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>電話</td>
-                        <td>082-326768</td>
-                    </tr>
-                    <tr>
-                        <td>地址</td>
-                        <td>金門縣金城鎮民族路171號</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
         </div>
-    </div>
-    <div class="animated-wrapper">
-        <div class="w3-container animated-item">
-            <div style="text-align: center;">
-                <img width="100%" src="image/hotel/06WujiangHotel.jpg" alt="">
+        <div class="animated-wrapper">
+            <div class="w3-container animated-item">
+                <div style="text-align: center;">
+                    <img width="100%" src="image/hotel/03In99BoutiqueHotel.jpg" alt="">
+                </div>
+                <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
+                    <tbody>
+                        <tr>
+                            <td>飯店名稱</td>
+                            <td>In99精品旅館</td>
+                        </tr>
+                        <tr>
+                            <td>網址</td>
+                            <td><a href="https://www.in99hotel.com/">https://www.in99hotel.com/</a></td>
+                        </tr>
+                        <tr>
+                            <td>電話</td>
+                            <td>082-324851</td>
+                        </tr>
+                        <tr>
+                            <td>地址</td>
+                            <td>金門縣金城鎮民生路16號</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
             </div>
-            <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
-                <tbody>
-                    <tr>
-                        <td>飯店名稱</td>
-                        <td>浯江大飯店</td>
-                    </tr>
-                    <tr>
-                        <td>網址</td>
-                        <td><a href="http://www.riverkinmen.com/">http://www.riverkinmen.com/</a></td>
-                    </tr>
-                    <tr>
-                        <td>電話</td>
-                        <td>082-322211</td>
-                    </tr>
-                    <tr>
-                        <td>地址</td>
-                        <td>金門縣金城鎮西海路三段100號</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
         </div>
-    </div>
-    <div class="animated-wrapper">
-        <div class="w3-container animated-item">
-            <div style="text-align: center;">
-                <img width="100%" src="image/hotel/07YunfengBoutiqueCulturalTourism.jpg" alt="">
+        <div class="animated-wrapper">
+            <div class="w3-container animated-item">
+                <div style="text-align: center;">
+                    <img width="100%" src="image/hotel/04HaifuBusinessHotel.jpg" alt="">
+                </div>
+                <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
+                    <tbody>
+                        <tr>
+                            <td>飯店名稱</td>
+                            <td>海福商務飯店</td>
+                        </tr>
+                        <tr>
+                            <td>網址</td>
+                            <td><a href="https://reurl.cc/OjyWX9">https://reurl.cc/OjyWX9</a></td>
+                        </tr>
+                        <tr>
+                            <td>電話</td>
+                            <td>082-322538</td>
+                        </tr>
+                        <tr>
+                            <td>地址</td>
+                            <td>金門縣金城鎮民權路85號</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
             </div>
-            <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
-                <tbody>
-                    <tr>
-                        <td>飯店名稱</td>
-                        <td>雲峰精品文旅</td>
-                    </tr>
-                    <tr>
-                        <td>網址</td>
-                        <td><a href="https://cphotel.ezhotel.com.tw/">https://cphotel.ezhotel.com.tw/</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>電話</td>
-                        <td>082-326688</td>
-                    </tr>
-                    <tr>
-                        <td>地址</td>
-                        <td>金門縣金寧鄉大學路32巷48號</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
         </div>
+        <div class="animated-wrapper">
+            <div class="w3-container animated-item">
+                <div style="text-align: center;">
+                    <img width="100%" src="image/hotel/05HongfuHotel.jpg" alt="">
+                </div>
+                <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
+                    <tbody>
+                        <tr>
+                            <td>飯店名稱</td>
+                            <td>宏福大飯店</td>
+                        </tr>
+                        <tr>
+                            <td>網址</td>
+                            <td><a href="https://www.hongfu-hotel.com/">https://www.hongfu-hotel.com/</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>電話</td>
+                            <td>082-326768</td>
+                        </tr>
+                        <tr>
+                            <td>地址</td>
+                            <td>金門縣金城鎮民族路171號</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+            </div>
+        </div>
+        <div class="animated-wrapper">
+            <div class="w3-container animated-item">
+                <div style="text-align: center;">
+                    <img width="100%" src="image/hotel/06WujiangHotel.jpg" alt="">
+                </div>
+                <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
+                    <tbody>
+                        <tr>
+                            <td>飯店名稱</td>
+                            <td>浯江大飯店</td>
+                        </tr>
+                        <tr>
+                            <td>網址</td>
+                            <td><a href="http://www.riverkinmen.com/">http://www.riverkinmen.com/</a></td>
+                        </tr>
+                        <tr>
+                            <td>電話</td>
+                            <td>082-322211</td>
+                        </tr>
+                        <tr>
+                            <td>地址</td>
+                            <td>金門縣金城鎮西海路三段100號</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+            </div>
+        </div>
+        <div class="animated-wrapper">
+            <div class="w3-container animated-item">
+                <div style="text-align: center;">
+                    <img width="100%" src="image/hotel/07YunfengBoutiqueCulturalTourism.jpg" alt="">
+                </div>
+                <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
+                    <tbody>
+                        <tr>
+                            <td>飯店名稱</td>
+                            <td>雲峰精品文旅</td>
+                        </tr>
+                        <tr>
+                            <td>網址</td>
+                            <td><a href="https://cphotel.ezhotel.com.tw/">https://cphotel.ezhotel.com.tw/</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>電話</td>
+                            <td>082-326688</td>
+                        </tr>
+                        <tr>
+                            <td>地址</td>
+                            <td>金門縣金寧鄉大學路32巷48號</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+            </div>
+        </div>
+        </br>
+        <p>更多資訊 : <a href="https://kinmen.travel/zh-tw/accommodation">金門縣觀光旅遊網</a></p>
+        </br>
     </div>
-    </br>
-    <p>更多資訊：<a href="https://kinmen.travel/zh-tw/accommodation">金門縣觀光旅遊網</a></p>
-    </br>
 </div>
 </div>`
 
@@ -1101,5 +1194,93 @@ const venue_content = `<div class="row gx-4 gx-lg-5 justify-content-center anima
         width="100%" height="450px" marginwidth="0" frameborder="0" style="border:0;" allowfullscreen=""
         aria-hidden="false" tabindex="0"></iframe>
     </br></br></br>
+</div>
+</div>`
+
+const Special_section_content = `<div class="container">
+<div class="row gx-4 gx-lg-5 justify-content-center animated-wrapper">
+    <div class="col-md-10 col-lg-8 col-xl-7 contextP animated-item">
+        </br></br></br>
+        <div class="animated-wrapper">
+            <div class="animated-item">
+                <h2 class="title title_color" style="color: #f78550;">特別議程</h2>
+            </div>
+        </div>
+        </br></br>
+        <p>※特別議程申請</p>
+        <p>特別議程請向特別議程主席洪集輝 教授申請，範本請參考 ITAOI2024 特別議程範本 （<a href="file/ITAOI2024特別議程範本.doc">下載檔案</a>）。</p>
+        </br></br>
+        <p>※特別議程投稿</p>
+        <p>特別議程論文收稿部分：</p>
+        <p>煩請每位特別議程主持人或共同主持人告知議程內夥伴，依照大會提供的摘要與 全文格式撰寫，其中 ”中英文摘要”只要擇一填寫即可。</p>
+        <p>請每一篇論文填寫完成附件中的 ”ITAOI2024 授權同意書”，其中若有科技部成果者請務必填寫“ITAOI2024 科技部工程科技推展中心授權同意書”。</p>
+        </br>
+        <p>特別議程論文收件時間與方式：</p>
+        <p>目前研討會收件時間為 2024/OO/OO 日前請每一位議程主持人將議程的預計投稿的論文名稱並依據大會給定的特別議程編號：例如 Multimedia and Network
+            Technology 議程編號 ITAOI2024-IS01，所以議程內的第一篇論文編號可為 ITAOI2024-IS01-01，給每一位作者，方便每一篇作者在期限內於報名系統內註冊繳費。</p>
+        <p>請 OO/OO 日前將論文成果（含摘要，全文論文檔，授權同意書與議程內論文與其對應編號)壓縮後一同 E-mail 到: itaoi2024@gmail.com）。</p>
+        </br>
+        <div class="animated-wrapper">
+            <div class="w3-container animated-item">
+                <table width="757" border="1" cellspacing="0" cellpadding="0" class="w3-table-all w3-large">
+                    <tbody>
+                        <tr>
+                            <th width="299" bgcolor="#fff"><strong>編號</strong></th>
+                            <th width="170" bgcolor="#fff"><strong>主題</strong></th>
+                            <th width="154" bgcolor="#fff"><strong>主辦單位</strong></th>
+                            <th width="124" bgcolor="#fff"><strong>備註</strong></th>
+                        </tr>
+                        <tr>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </br></br></br>
+    </div>
+</div>
+</div>`
+
+const contact_content = `<div class="container">
+<div class="row gx-4 gx-lg-5 justify-content-center animated-wrapper">
+    <div class="col-md-10 col-lg-8 col-xl-7 contextP animated-item">
+        </br></br></br>
+        <div class="animated-wrapper">
+            <div class="animated-item">
+                <h2 class="title title_color" style="color: #f78550;">聯絡我們</h2>
+            </div>
+        </div>
+        </br></br>
+        <p>對於本次研討會若有任何疑問，或在報名、投稿流程上遇到任何問題，歡迎與我們連絡！</p>
+        </br>
+        <p>電話：(082) 313531 李小姐</p>
+        <p>傳真：(082) 313529</p>
+        <p>地址：國立金門大學 89250 金門縣金寧鄉大學路一號</p>
+        <p>E-Mail：csie@email.nqu.edu.tw</p>
+        </br>
+        </br>
+    </div>
 </div>
 </div>`
