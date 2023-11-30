@@ -830,7 +830,7 @@ const Commit_Member_content = `<div class="container">
     <div class="col-md-4 blog_post animated-wrapper">
         <div class="animated-item">
             <div class="single-gallery-image"
-                style="background: url(image/Commit_Members/23.webp);">
+                style="background: url(image/Commit_Members/23.png);">
             </div>
 
             <div class="blog_details">
