@@ -308,15 +308,15 @@ window.addEventListener('DOMContentLoaded', () => {
     const headerHeight = mainNav.clientHeight;
     window.addEventListener('scroll', function () {
         const currentTop = document.body.getBoundingClientRect().top * -1;
-        if ( currentTop < scrollPos) {
+        if (currentTop < scrollPos) {
             // Scrolling Up
-            if (window.pageYOffset < 20){
+            if (window.pageYOffset < 20) {
                 mainNav.classList.remove(['navbar_fixed']);
             }
             else if (currentTop > 0) {
                 mainNav.classList.add('navbar_fixed');
-            } 
-           
+            }
+
         } else {
             // Scrolling Down
             mainNav.classList.remove(['navbar_fixed']);
@@ -325,3 +325,45 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 })
 
+const my_observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        const animated_item = entry.target.querySelector('.animated-item');
+
+        if (entry.isIntersecting) {
+            // square.classList.add(['animated', 'fadeInUp']);
+            // square.classList.add(['animated', 'fadeInUp']);
+            animated_item.classList.add('animated');
+            animated_item.classList.add('fadeInUp');
+            return; // if we added the class, exit the function
+        }
+
+        // We're not intersecting, so remove the class!
+        //   animated_item.classList.remove('animated');
+        //   animated_item.classList.remove('fadeInUp');
+    });
+});
+var animated_wrappers = document.querySelectorAll('.animated-wrapper');
+for (var i = 0; i < animated_wrappers.length; i++) {
+    my_observer.observe(animated_wrappers[i]);
+}
+function more_news() {
+    // Create an "li" node:
+    const node = document.createElement("div");
+    node.innerHTML = more_news_content
+    new_area = document.getElementById("NewsArea")
+    news_button = document.getElementById("more_news")
+    news_button.style.display = "none"
+    // Append the "li" node to the list:
+    new_area.appendChild(node);
+}
+
+const more_news_content = `<div class="post-preview">
+<ul>
+    <li style="font-size: 28px;">
+        <a class="post-meta animated-item" href=""> 網站架設 </a>
+    </li>
+    <p class="post-subtitle">NOV 15, 2023</p>
+</ul>
+</div>
+</br>
+`

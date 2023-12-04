@@ -38,6 +38,12 @@
 
 
 
+20231204
+
+-> 將 hash router js 填入內容的方式，改為 page html 的方式
+
+
+
 openConf: https://www.openconf.com/download/
 
 github上沒有
