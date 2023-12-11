@@ -89,6 +89,10 @@ a:hover, a:focus {
   height: 100% !important;
 }
 
+.a_blue_color a{
+  color: #2faae6;
+}
+
 .navbarT {
   overflow: hidden;
   position: relative;
