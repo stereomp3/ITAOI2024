@@ -28,6 +28,7 @@
     width:25vw;
     height:50px;
     text-align:center;
+    vertical-align:text-top;
     border-top: 1px dotted #6b675d;
     border-left: 1px dotted #6b675d;
   }
