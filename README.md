@@ -1,5 +1,7 @@
 # ITAOI2024
 
+https://stereomp3.github.io/ITAOI2024/
+
 目前重要日期與大會簡介內容已經差不多了，剩下詳細資料需要寫入
 
 首頁
@@ -32,7 +34,7 @@
 
 贊助單位 Sponsor.html
 
-徵求論文 CFP Under_Construction.html
+徵求論文 CFP CFP.html
 
 聯絡我們 contact.html
 
