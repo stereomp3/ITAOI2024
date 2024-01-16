@@ -53,3 +53,19 @@ github上沒有
 
 
 openConf 需要放在有 server 的網站上，官網有說明如何使用 https://www.openconf.com/documentation/install.php，看起來像是要使用 Linux 系統
+
+1. download php in windows: [教學](https://learn.microsoft.com/zh-tw/iis/application-frameworks/install-and-configure-php-on-iis/install-and-configure-php)、[下載](https://windows.php.net/downloads/releases/php-8.3.1-nts-Win32-vs16-x64.zip)
+   * 要去控制台開啟 CGI windows 功能
+   * **open_basedir** 需要指定資料夾
+   * php.ini 如果沒有要自己創
+   * `extension=php_mysqli.dll` 要開
+2. install mysql : [教學](https://chwang12341.medium.com/mysql-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E4%BA%8C-%E4%B8%80%E5%88%86%E9%90%98%E8%BC%95%E9%AC%86%E7%9E%AD%E8%A7%A3%E5%A6%82%E4%BD%95%E5%9C%A8windows%E4%B8%8A%E5%AE%89%E8%A3%9Dmysql-63cce07c6a6c)、[下載](https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.35.0.msi)
+
+
+
+openconf
+
+* (1)user: root
+* (1)Database Hostname: localhost
+* (2)username: chair
+* (2)passwd: 307 pw + openconf
