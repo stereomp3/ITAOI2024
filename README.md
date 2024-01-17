@@ -67,11 +67,19 @@ openConf 需要放在有 server 的網站上，官網有說明如何使用 https
    
 2. install mysql : [教學](https://chwang12341.medium.com/mysql-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E4%BA%8C-%E4%B8%80%E5%88%86%E9%90%98%E8%BC%95%E9%AC%86%E7%9E%AD%E8%A7%A3%E5%A6%82%E4%BD%95%E5%9C%A8windows%E4%B8%8A%E5%AE%89%E8%A3%9Dmysql-63cce07c6a6c)、[下載](https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.35.0.msi)
 
-
+sql root passwd: E307 passwd
 
 openconf
 
 * (1)user: root
 * (1)Database Hostname: localhost
 * (2)username: chair
-* (2)passwd: 307 pw + openconf
+* (2)passwd: E307 pw + openconf
+
+
+
+translator: https://www.openconf.com/translate/、https://poedit.net/
+
+語言設定要開啟 php 的 gettext 功能，並在 lib/locale 裡面 建立 extras.inc，把 *** 改成想要的語言
+
+IIS_IUSRS
