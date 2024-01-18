@@ -392,7 +392,7 @@ function printHeader($what, $function="0") {
 			'<a href="' . $pfx . 'author/contact.php" id="oc-menu-email">' . safeHTMLstr(oc_('Email Chair')) . '</a>',
 			),
 		1 => array(	// chair
-			'<a href="' . $pfx . 'chair/" id="oc-menu-chair-home">' . safeHTMLstr(sprintf(oc_('%s Home'), (defined('OCC_WORD_CHAIR') ? OCC_WORD_CHAIR : 'Chair'))) . '</a>',
+			'<a href="' . $pfx . 'chair/index.php" id="oc-menu-chair-home">' . safeHTMLstr(sprintf(oc_('%s Home'), (defined('OCC_WORD_CHAIR') ? OCC_WORD_CHAIR : 'Chair'))) . '</a>',
 			'<a href="https://www.openconf.com/support/" id="oc-menu-chair-support" target="_blank" title="OpenConf Support Web Site (new window)">Help</a>',
 			'<a href="' . $pfx . 'chair/signout.php" id="oc-menu-chair-signout">Sign Out</a>',
 			),
@@ -405,7 +405,7 @@ function printHeader($what, $function="0") {
 			),	
 		3 => array(	// author, sign in/up, other
 			//T: %s = OpenConf
-			'<a href="' . (empty($pfx) ? './' : $pfx) . '" id="oc-menu-home">' . safeHTMLstr(sprintf(oc_('%s Home'), 'OpenConf')) . '</a>',
+			'<a href="http://127.0.0.1/openconf/openconf.php" id="oc-menu-home">' . safeHTMLstr(sprintf(oc_('%s Home'), 'OpenConf')) . '</a>',
 			'<a href="' . $pfx . 'author/contact.php" id="oc-menu-email">' . safeHTMLstr(oc_('Email Chair')) . '</a>',
 			),
 		4 => array( // install

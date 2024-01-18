@@ -63,6 +63,8 @@ openConf 需要放在有 server 的網站上，官網有說明如何使用 https
    
    * **open_basedir** 需要指定資料夾
    
+   * 需要指定 upload_tmp_dir，才能上傳檔案，我是設定在 openconf 裡面的 tmp (自己創建的資料夾)
+   
    * `extension=php_mysqli.dll` ，extension 很多要開，詳情看[官網](https://www.openconf.com/documentation/requirements.php)
    
 2. install mysql : [教學](https://chwang12341.medium.com/mysql-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E4%BA%8C-%E4%B8%80%E5%88%86%E9%90%98%E8%BC%95%E9%AC%86%E7%9E%AD%E8%A7%A3%E5%A6%82%E4%BD%95%E5%9C%A8windows%E4%B8%8A%E5%AE%89%E8%A3%9Dmysql-63cce07c6a6c)、[下載](https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.35.0.msi)

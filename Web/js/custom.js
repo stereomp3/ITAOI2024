@@ -360,6 +360,14 @@ function more_news() {
 const more_news_content = `<div class="post-preview">
 <ul>
     <li style="font-size: 28px;">
+        <a class="post-meta animated-item" href="Date.html"> 重要日期已更新</a>
+    </li>
+    <p class="post-subtitle">NOV 23, 2023</p>
+</ul>
+</div>
+<div class="post-preview">
+<ul>
+    <li style="font-size: 28px;">
         <a class="post-meta animated-item" href=""> 網站架設 </a>
     </li>
     <p class="post-subtitle">NOV 15, 2023</p>

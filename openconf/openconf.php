@@ -23,7 +23,6 @@ if (!defined('OCC_INSTALL_COMPLETE') || !OCC_INSTALL_COMPLETE) {
 	header("Location: " . OCC_BASE_URL . "chair/install.php");
 	exit;
 }
-
 printHeader('');
 
 // Home page notice
