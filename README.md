@@ -85,3 +85,11 @@ translator: https://www.openconf.com/translate/、https://poedit.net/
 語言設定要開啟 php 的 gettext 功能，並在 lib/locale 裡面 建立 extras.inc，把 *** 改成想要的語言
 
 IIS_IUSRS
+
+
+
+openconf修改功能
+
+* 按下首頁跳回真首頁 (chair、openconf；include.php)
+* 修改些許翻譯、和轉中文 (extras-template.inc、OpenConf7.41.mo)
+* 上傳文件功能 (add new tmp file、author/upload.php、author/paper.php、chair/list_papers.php ...)
