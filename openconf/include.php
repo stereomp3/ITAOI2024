@@ -394,7 +394,7 @@ function printHeader($what, $function="0") {
 		1 => array(	// chair
 			'<a href="' . $pfx . 'chair/index.php" id="oc-menu-chair-home">' . safeHTMLstr(sprintf(oc_('%s Home'), (defined('OCC_WORD_CHAIR') ? OCC_WORD_CHAIR : 'Chair'))) . '</a>',
 			'<a href="https://www.openconf.com/support/" id="oc-menu-chair-support" target="_blank" title="OpenConf Support Web Site (new window)">Help</a>',
-			'<a href="' . $pfx . 'chair/signout.php" id="oc-menu-chair-signout">Sign Out</a>',
+			'<a href="http://127.0.0.1/openconf/openconf.php' . $pfx . 'chair/signout.php" id="oc-menu-chair-signout">Sign Out</a>',
 			),
 		2 => array(	// committee
 			//T: Member Home = Committee Member Home Page (e.g., Reviewer Home Page)
