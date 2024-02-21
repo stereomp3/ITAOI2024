@@ -93,3 +93,9 @@ openconf修改功能
 * 按下首頁跳回真首頁 (chair、openconf；include.php)
 * 修改些許翻譯、和轉中文 (extras-template.inc、OpenConf7.41.mo)
 * 上傳文件功能 (add new tmp file、author/upload.php、author/paper.php、chair/list_papers.php ...)
+
+
+
+install PHPMailer
+
+install windows telnet (在控制台/變更 windows 功能那邊)
