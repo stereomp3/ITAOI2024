@@ -325,6 +325,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 })
 
+// IntersectionObserver Introduction: https://jim1105.coderbridge.io/2022/07/30/intersection-observer/、https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 const my_observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         const animated_item = entry.target.querySelector('.animated-item');
@@ -342,10 +343,15 @@ const my_observer = new IntersectionObserver(entries => {
         //   animated_item.classList.remove('fadeInUp');
     });
 });
-var animated_wrappers = document.querySelectorAll('.animated-wrapper');
-for (var i = 0; i < animated_wrappers.length; i++) {
-    my_observer.observe(animated_wrappers[i]);
+
+function observe_animated_wrappers() {
+    var animated_wrappers = document.querySelectorAll('.animated-wrapper');
+    for (var i = 0; i < animated_wrappers.length; i++) {
+        my_observer.observe(animated_wrappers[i]);
+    }
 }
+observe_animated_wrappers();
+
 function more_news() {
     // Create an "li" node:
     const node = document.createElement("div");
@@ -355,6 +361,7 @@ function more_news() {
     news_button.style.display = "none"
     // Append the "li" node to the list:
     new_area.appendChild(node);
+    observe_animated_wrappers();
 }
 
 const more_news_content = `<div class="post-preview animated-wrapper">
