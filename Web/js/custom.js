@@ -364,7 +364,15 @@ function more_news() {
     observe_animated_wrappers();
 }
 
-const more_news_content = `<div class="post-preview animated-wrapper">
+const more_news_content = `<div class="post-preview animated-wrapper"> 
+<ul>
+    <li style="font-size: 28px;">
+        <a class="post-meta animated-item" href="traffic_stay.html"> 交通資訊已更新 </a>
+    </li>
+    <p class="post-subtitle">DEC 01, 2023</p>
+</ul>
+</div>
+<div class="post-preview animated-wrapper">
 <ul>
     <li style="font-size: 28px;">
         <a class="post-meta animated-item" href="Special_section.html"> 特別議程已更新 </a>
