@@ -99,3 +99,9 @@ openconf修改功能
 install PHPMailer
 
 install windows telnet (在控制台/變更 windows 功能那邊)
+
+
+
+電腦備份在 mysql_backup，和 google drive
+
+設定禮拜 5 早上 4 點重新啟動
