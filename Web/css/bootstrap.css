@@ -29,7 +29,7 @@
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
+  --breakpoint-lg: 992px; /*992*/
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -1807,7 +1807,7 @@ pre code {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991px) { 
   .table-responsive-lg {
     display: block;
     width: 100%;
@@ -1820,7 +1820,7 @@ pre code {
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1310px) { /*1199*/
   .table-responsive-xl {
     display: block;
     width: 100%;
@@ -3796,7 +3796,7 @@ tbody.collapse.show {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1300px) { /*992*/
   .navbar-expand-lg {
     -ms-flex-flow: row nowrap;
         flex-flow: row nowrap;
@@ -3838,7 +3838,7 @@ tbody.collapse.show {
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1310px) { /*1199*/
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
@@ -3846,7 +3846,7 @@ tbody.collapse.show {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1311px) { /*1200*/
   .navbar-expand-xl {
     -ms-flex-flow: row nowrap;
         flex-flow: row nowrap;
