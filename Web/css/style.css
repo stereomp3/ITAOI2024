@@ -496,7 +496,7 @@ button:focus {
   background: transparent;
 }
 
-@media (min-width: 1300px) { /*992*/
+@media (min-width: 1470px) { /*992*/
   .navbar .menu_nav .nav-item.submenu ul {
     position: absolute;
     top: 100%;
@@ -544,7 +544,7 @@ button:focus {
   transition: all 0.4s linear;
 }
 
-@media (min-width: 1300px) { /*992*/
+@media (min-width: 1470px) { /*992*/
   .navbar .menu_nav .nav-item.submenu ul .nav-item {
     margin-top: 10px;
   }
@@ -569,7 +569,7 @@ button:focus {
   color: #52c5fd;
 }
 
-@media (min-width: 1300px) { /*992*/
+@media (min-width: 1470px) { /*992*/
   .navbar .menu_nav .nav-item.submenu:hover ul {
     visibility: visible;
     opacity: 1;

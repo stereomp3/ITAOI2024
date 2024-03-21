@@ -1820,7 +1820,7 @@ pre code {
   }
 }
 
-@media (max-width: 1310px) { /*1199*/
+@media (max-width: 1480px) { /*1199*/
   .table-responsive-xl {
     display: block;
     width: 100%;
@@ -3796,7 +3796,7 @@ tbody.collapse.show {
   }
 }
 
-@media (min-width: 1300px) { /*992*/
+@media (min-width: 1470px) { /*992*/
   .navbar-expand-lg {
     -ms-flex-flow: row nowrap;
         flex-flow: row nowrap;
@@ -3838,7 +3838,7 @@ tbody.collapse.show {
   }
 }
 
-@media (max-width: 1310px) { /*1199*/
+@media (max-width: 1480px) { /*1199*/
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
