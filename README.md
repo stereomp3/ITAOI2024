@@ -2,7 +2,7 @@
 
 https://stereomp3.github.io/ITAOI2024/
 
-目前重要日期與大會簡介內容已經差不多了，剩下詳細資料需要寫入
+目前網頁已經完成，剩下細微內容須調整
 
 首頁
 
@@ -16,23 +16,25 @@ https://stereomp3.github.io/ITAOI2024/
 
 * 大會議程 Program.html
 * 特別議程 Special_section.html
-* 專題演講 Under_Construction.html
+* 專題演講 keynote_speaker.html
 * 國科會成果發表與交流會議程 nstc.html
 
 投稿系統與報名
 
 * 投稿方式 submit_info.html
-* 投稿、審稿系統 Under_Construction.html
+* 投稿、審稿系統 openconf.php
 * 報名系統 signup.html
 
 交通與住宿
 
 * 交通、住宿資訊  traffic_stay.html
-* 大會地點 -- Under_Construction.html
-* 參訪行程 -- Under_Construction.html
-* 接駁車服務 -- Under_Construction.html
+* 大會地點 -- venue.html
+* 參訪行程 -- itinerary.html
+* 接駁車服務 -- shuttle_bus.html
 
 贊助單位 Sponsor.html
+
+離島盃資安競賽 information_security.html
 
 徵求論文 CFP CFP.html
 
