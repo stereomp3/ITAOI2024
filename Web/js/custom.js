@@ -367,6 +367,14 @@ function more_news() {
 const more_news_content = `<div class="post-preview animated-wrapper"> 
 <ul>
     <li style="font-size: 28px;">
+        <a class="post-meta animated-item" href="Sponsor.html"> 主辦與贊助單位已更新 </a>
+    </li>
+    <p class="post-subtitle">FEB 21, 2024</p>
+</ul>
+</div>
+<div class="post-preview animated-wrapper"> 
+<ul>
+    <li style="font-size: 28px;">
         <a class="post-meta animated-item" href="Program.html"> 大會議程已更新 </a>
     </li>
     <p class="post-subtitle">FEB 21, 2024</p>
