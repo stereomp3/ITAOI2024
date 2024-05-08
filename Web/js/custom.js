@@ -470,3 +470,199 @@ const more_news_content = `<div class="post-preview animated-wrapper">
 </div>
 </br>
 `
+function forum01() {
+    document.getElementById('ITAOI_Content').innerHTML = forum_sharer01
+}
+function forum02() {
+    document.getElementById('ITAOI_Content').innerHTML = forum_sharer02
+}
+const forum_sharer01 = `
+<div class="container">
+            <div class="row gx-4 gx-lg-5 justify-content-center animated-wrapper">
+                <div class="col-xl-10 contextP animated-item">
+                    </br></br>
+                    <h2 class="title title_color" style="color: #000; text-align: center;">業界論壇分享者</h2>
+                    <div class="button-group-area mt-10" style="text-align: center;">
+                        <a onclick="forum01()" class="genric-btn primary-border circle" style="width: 40%;">Gilbert Lin</a>
+                        <a onclick="forum02()" class="genric-btn primary-border circle" style="width: 40%;">Teddy Chuang</a>
+                    </div>
+                    </br></br>
+                    <div class="row">
+                        <div class="col-md-12 animated-wrapper">
+                            <div class="animated-item">
+                                <a style="color: #234fad; padding-bottom: 0.5vw; font-size: 35px;">
+                                    林展吉 （Gilbert Lin）</a></br></br>
+
+                                <div class="post-preview animated-wrapper">
+                                    <ul>
+                                        <h2>
+                                            <li style="color: rgb(90,90,90); font-size: 25px; list-style-image: none;">
+                                                東亞 台灣區 通路業務 協理
+                                            </li>
+                                        </h2>
+                                    </ul>
+                                </div>
+                                <div class="post-preview animated-wrapper">
+                                    <ul>
+                                        <h2>
+                                            <li style="color: rgb(90,90,90); font-size: 25px; list-style-image: none;">
+                                                伊頓飛瑞慕品股份有限公司 （Eaton Taiwan） 電氣事業部
+                                            </li>
+                                        </h2>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 animated-wrapper">
+                            <div class="animated-item">
+                                <img src="image/keynote_speaker/forum_sharing.png" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-md-9 animated-wrapper">
+                            <div class="animated-item" style="font-size: 20px; color:rgb(20,20,20);">
+                                </br>
+                                <p align="left" style="text-align: justify;">林展吉在二十餘年的工作經歷中均從事業務推廣及通路銷售等相關業務工 作，因緣際會在
+                                    2005年於力登（Raritan） 電腦接觸到機房內終端電力設備之 管理，進而在
+                                    2011年於艾默生（Emerson） 網絡能源得以規劃銷售數據機房 整體解決方案，2014年加入伊頓（Eaton）集團後成為台灣區通路業務推廣團
+                                    隊之一員，在電力與能源相關的領域約有9年的資歷。</p>
+                                <p align="left" style="text-align: justify;">2014 年加入伊頓集團至今，帶領台灣區通路業務團隊拓展國內市場，小至容 量
+                                    500VA 個人使用之不斷電系統，大至1，100kVA可供半導體生產線使用之
+                                    超大型不斷電系統均有銷售紀錄，近兩年來三相業務均以每年15%以上穩 定成長，憑藉著豐富的經銷渠道之管理經驗，除了佈建新的通路經銷商，制
+                                    定經銷商管理規則，建立客訴服務系統並迅速回應客戶，針對既有經銷體系 之管理也不遺餘力。</p>
+                                <p align="left" style="text-align: justify;">因熟悉產品線之緣故，經常建議公司發展及包裝相關產品線並試圖增加銷售
+                                    營業額，同時輔以市場行銷之動能，藉以加速產品的銷售及品牌的曝光，林
+                                    展吉針對伊頓集團在台灣市場的推廣及發展仍保有相當的熱情，未來將持續 帶領著伊頓通路業務團隊經營客戶、服務客戶，並以創新的思維參與組織調 整與工作任務轉換的重大使命。
+                                </p>
+                            </div>
+                        </div>
+                        </br></br>
+                        <div class="col-md-12 animated-wrapper">
+                            <div class="animated-item">
+                                <h2 style="margin: 3%; color: #234fad;">經歷</h2>
+                                <div class="post-preview animated-wrapper">
+                                    <ul>
+                                        <li style="color: rgb(90,90,90); font-size: 20px; list-style-image: none;">
+                                            伊頓飛瑞慕品(股)有限公司 通路業務協理 2014 ~迄今
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="post-preview animated-wrapper">
+                                    <ul>
+                                        <li style="color: rgb(90,90,90); font-size: 20px; list-style-image: none;">
+                                            美商艾默生網絡能源有限公司 通路經理 2011~2014
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="post-preview animated-wrapper">
+                                    <ul>
+                                        <li style="color: rgb(90,90,90); font-size: 20px; list-style-image: none;">
+                                            懇懋科技(股)公司 經銷業務處處長 2008~2011
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="post-preview animated-wrapper">
+                                    <ul>
+                                        <li style="color: rgb(90,90,90); font-size: 20px; list-style-image: none;">
+                                            美商力登電腦(股)有限公司 通路業務經理 2005~2008
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="post-preview animated-wrapper">
+                                    <ul>
+                                        <li style="color: rgb(90,90,90); font-size: 20px; list-style-image: none;">
+                                            大同(股)公司 業務經理 2002~2005
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="post-preview animated-wrapper">
+                                    <ul>
+                                        <li style="color: rgb(90,90,90); font-size: 20px; list-style-image: none;">
+                                            智邦科技(股)公司 產品經理 1999~2002
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="post-preview animated-wrapper">
+                                    <ul>
+                                        <li style="color: rgb(90,90,90); font-size: 20px; list-style-image: none;">
+                                            台康電腦(股)有限公司 業務專員 1997~1999
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="post-preview animated-wrapper">
+                                    <ul>
+                                        <li style="color: rgb(90,90,90); font-size: 20px; list-style-image: none;">
+                                            統一南聯貿易股份有限公司 業務代表 1995~1997
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        </br>
+                    </div>
+
+                    </br></br></br></br></br></br>
+                </div>
+
+            </div>
+
+        </div>
+`
+const forum_sharer02 = `
+<div class="container">
+    <div class="row gx-4 gx-lg-5 justify-content-center animated-wrapper">
+        <div class="col-xl-10 contextP animated-item">
+            </br></br>
+            <h2 class="title title_color" style="color: #000; text-align: center;">業界論壇分享者</h2>
+            <div class="button-group-area mt-10" style="text-align: center;">
+            <a onclick="forum01()" class="genric-btn primary-border circle" style="width: 40%;">Gilbert Lin</a>
+            <a onclick="forum02()" class="genric-btn primary-border circle" style="width: 40%;">Teddy Chuang</a>
+            </div>
+            </br></br>
+            <div class="row">
+                <div class="col-md-12 animated-wrapper">
+                    <div class="animated-item">
+                        <a style="color: #234fad; padding-bottom: 0.5vw; font-size: 35px;">
+                            莊永杰 （Teddy Chuang） </a></br></br>
+                        <div class="post-preview animated-wrapper">
+                            <ul>
+                                <h2>
+                                    <li style="color: rgb(90,90,90); font-size: 25px; list-style-image: none;">
+                                        Fortinet 資深業務協理 
+                                    </li>
+                                </h2>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 animated-wrapper">
+                    <div class="animated-item">
+                        <img src="image/keynote_speaker/forum_sharing02.png" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-9 animated-wrapper">
+                    <div class="animated-item" style="font-size: 20px; color:rgb(20,20,20);">
+                        <div class="post-preview animated-wrapper">
+                            <ul>
+                                <h2>
+                                    <p style="color: rgb(90,90,90); font-size: 25px; list-style-image: none;">
+                                        ＂資安即國安，FORTINET 協助你懂資安＂
+                                    </p>
+                                </h2>
+                            </ul>
+                        </div>
+                        </br>
+                        
+                        <p align="left" style="text-align: justify;">莊永杰先生目前任職於台灣 Fortinet 資深業務協理，在資訊科技產業擁有超過18年
+                            的豐富經歷，了解科技市場動態，並熟悉網路架構與應用程式支援等關鍵IT策略，
+                            洞悉客戶需求，協助企業提供最完善的資安相關解決方案部署及資安事件應變處理。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            </br></br></br></br></br></br>
+        </div>
+    </div>
+</div>
+`
