@@ -708,31 +708,31 @@ const forum_sharer03 = `
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-md-3 animated-wrapper">
+                        <div class="col-md-3 animated-wrapper">
                             <div class="animated-item">
-                                <img src="image/keynote_speaker/forum_sharing.png" width="100%">
-                            </div> col-md-9
-                        </div> -->
-                        <div class="col-md-12 animated-wrapper"> 
+                                <img src="image/keynote_speaker/forum_sharing03.jpg" width="100%">
+                            </div> 
+                        </div> 
+                        <div class="col-md-9 animated-wrapper"> 
                             <div class="animated-item" style="color:rgb(20,20,20);">
                                 <div class="post-preview animated-wrapper">
-                                </br></br>
                                     <h2>
                                         <p style="color: rgb(90,90,90); font-size: 25px; list-style-image: none;">
                                             ＂2024 生成式 AI 創客浪潮＂
                                         </p>
                                     </h2>
-                                </div>
-                                <p align="left" style="font-size: 16px; text-align: justify;">在這個充滿活力的2024年，我們將一起探索生成式
+                                </div>\
+                                </br>
+                                <p align="left" style="font-size: 18px; text-align: justify;">在這個充滿活力的2024年，我們將一起探索生成式
                                     AI 創客浪潮如何深入我們的生活。這場演講將帶您了解一個全新的 SDGs
                                     AI世界，一個不需要網路連接、沒有使用門檻、低能耗、完全免費、無任何使用限制，並且不斷與時俱進的 OpenVINO AI 實務應用。
                                 </p>
-                                <p align="left" style="font-size: 16px; text-align: justify;">我們將展示如何在沒有網路的環境下使用
+                                <p align="left" style="font-size: 18px; text-align: justify;">我們將展示如何在沒有網路的環境下使用
                                     AI，讓全校都能夠享受到AI 的便利，每一個學生都能從中獲得實實在在的成果——這就是我們的目標 【
                                     班班有AI，生生有成果】。在這場演講中，我們將分享實用的案例和動人的故事，展現從< 分辨式 AI>到< 生成式AI>
                                             如何在教育、專題、工作、甚至是日常生活中發揮其獨特的魅力。它不僅是技術的展現，更是一種全新的生活方式。
                                 </p>
-                                <p align="left" style="font-size: 16px; text-align: justify;">
+                                <p align="left" style="font-size: 18px; text-align: justify;">
                                     讓我們一起迎接這場 AI 創客浪潮，探索 AI 如何在我們的生活中扮演關鍵角色，並且為我們帶來前所未有的便利和成就。
                                 </p>
                                 </br></br></br></br></br></br>
