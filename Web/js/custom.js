@@ -367,6 +367,13 @@ function more_news() {
 const more_news_content = `<div class="post-preview animated-wrapper"> 
 <ul>
     <li style="font-size: 28px;">
+        <a class="post-meta animated-item" href="Date.html"> 投稿時間延長 </a>
+    </li>
+    <p class="post-subtitle">MAR 21, 2024</p>
+</ul>
+</div><div class="post-preview animated-wrapper"> 
+<ul>
+    <li style="font-size: 28px;">
         <a class="post-meta animated-item" href="information_security.html"> 離島盃資安競賽開放報名 </a>
     </li>
     <p class="post-subtitle">MAR 21, 2024</p>
